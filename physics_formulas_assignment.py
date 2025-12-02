@@ -2,9 +2,9 @@
 name = str(input('Enter your name: '))
 print('Hey ' + name)
 
-print("Welcome to Emelie's Calculator :)")
+print("Welcome to David's Calculator")
 print("Here are my available physics formulas")
-print('a. force = mass * acceleration')
+print('a. Weight = mass * acceleration_due_to_gravity')
 print('b. kinetic_energy = 0.5 * mass * velocity^2')
 print('c. velocity = displacement / time')
 print('d. voltage = current * resistance')
@@ -15,10 +15,10 @@ chosen_formula = input('Which of the above physics formulas would you like to us
 if chosen_formula == 'a':
     mass = float(input('Enter the mass: '))
     print('mass, m = ' + str(mass) + 'kg')
-    acceleration = float(input('Enter the acceleration: '))
-    print('acceleration, a = ' + str(acceleration) + 'm/s^2')
-    print('F = m x a')
-    print('the calculated force = ' + str(mass * acceleration) + 'N')
+    acceleration_due_to_gravity = int(10)
+    print('acceleration due to gravity, g = 10 m/s^2')
+    print('W = m x g')
+    print('the calculated weight = ' + str(mass * 10) + 'N')
 
 elif chosen_formula == 'b':
     mass = float(input('Enter the mass: '))
@@ -56,4 +56,5 @@ else:
     print("Oops! Seems like I don't have this physics formula")
 
 
-print("Thanks for using Emelie's Calculator")
+
+print("Thanks for using David's Calculator")
